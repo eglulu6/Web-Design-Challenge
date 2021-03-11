@@ -1,3 +1,8 @@
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
 
 
 header {
@@ -5,11 +10,10 @@ header {
     top: 0;
     text-align: center;
     height: 60px;
-    background-color: rgba(57, 71, 71, 0.767);
+    background-color: rgba(57, 71, 71, 0.8);
     color: white;
     font-weight: bold;
     font-size: 20px;
-    text-decoration: underline;
 }
 
 body {
@@ -17,7 +21,7 @@ body {
     /* margin-right: 200px; */
     /* Set a background image by replacing the URL below */
     background: 
-    url('https://www.metoffice.gov.uk/binaries/content/gallery/metofficegovuk/hero-images/weather/cloud/altocumulus.jpg/altocumulus.jpg/metofficegovuk%3AheroXXLarge') 
+    url('../bkgrndimg.jpg') 
     no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -27,16 +31,19 @@ body {
 
 .overview {
     margin-top: 60px;
-    padding-left: 30px;
-    background-color: whitesmoke;
+    padding: 30px;
+    background-color: white;
+    box-shadow: 0 0 50px 15px grey;
 }
     .overview h3 {
         padding-top: 30px;
+        background-color: white;
     }
     .overview p {
         padding-top: 10px;
         padding-bottom: 10px;
         font-size: 20px;
+        background-color: white;
 
     }
     /* .overview img {
@@ -47,41 +54,76 @@ body {
     } */
 
 .comparison {
-    text-align: center;
-    background-color: whitesmoke;
+    text-align: left;
+    text-indent: 3px;
+    background-color: white;
 }
     .comparison h3 {
         padding-top: 10px;
         padding-bottom: 10px;
+        text-align: center;
     }
+    .comparison ul {
+        font-size: 20px;
+    }
+
 
 .Page0 .Page0, 
 .Page1 .Page1,.Page2 .Page2,
 .Page3 .Page3,.Page4 .Page4,
 .Page5 .Page5,.Page6 .Page6 {
     color :white;
-    font-weight: bold;  
+    font-weight: bold;
+    background: grey;  
 }
 
+/* .navbar {background-color: #e3f2fd; padding: 10px;}
+.navbar a{ text-decoration: none; color: black;} */
+
 .sidenav {
-    height: 100%;
-    /* width: 200px; */
+    height: 61px;
     position: fixed;
     z-index: 1;
     right: 0;
-    background-color: rgba(57, 71, 71, 0.767);
-    overflow-x: hidden;
+    background: #73AD21;
+    color: white;
     padding-top: 5px;
+
   }
   .sidenav a {
-    padding: 6px 6px 6px 32px;
+    padding: 6px 6px 6px 6px;
+    right: 0;
     text-decoration: none;
     font-size: 25px;
-    color: #b9b9b9;
+    color: white;
     display: block;
+    background: #73AD21;
+    border-radius: 25px;
+    text-align: center;
 }
   .sidenav a:hover {
     color: black;
-    background-color: #f1f1f1;
+    background-color: white;
   }
-  
+
+.home {
+border-radius: 25px;
+background: #73AD21;
+/* padding: 20px; */
+width: 200px;
+height: 50px;
+color: white;
+cursor: pointer;
+text-decoration: none;
+  }
+  .home a {
+    border-radius: 25px;
+    background: #73AD21;
+    /* padding: 20px; */
+    width: 200px;
+    height: 50px;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+  }
+ 

@@ -7,70 +7,65 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="styles.css">
 </head>
 
 
+<!-- whole page -->
 <main class="Page2">
-<div class="row">  <!-- ROW_1 -->
 
-<header class="header">
-    <h1> Humidity vs Longitude </h1>
-</header>
+    <div class="row">  <!-- ROW_1 Header-->
+        <header >
+            <h1 class="home">
+                <a class="home" href="../index.html"> Humid </a>
+            </h1>
+        </header>
+    </div>  <!-- ROW_1 Header-->
 
-</div>  <!-- ROW_1 -->
+    <!-- page container minus header -->
+    <div class="container">
 
-<div class="container">
+        <!-- navbar -->
+        <nav>
+            <div class="sidenav navbar navbar-expand-md navbar-light">
+                    <a class=" nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Menu</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li ><a class="Page0" href="../index.html">Homepage</a></li>
+                            <li ><a  class="Page1 dropdown-item" href="../Viz1/index.html">Max Temp</a></li> 
+                            <li ><a  class="Page2 dropdown-item" href="#">Humidity</a></li> 
+                            <li ><a  class="Page3 dropdown-item" href="../Viz3/index.html">Cloudiness</a></li>
+                            <li ><a  class="Page4 dropdown-item" href="../Viz4/index.html">Wind Speed</a></li>
+                            <li ><a class="Page5 dropdown-item" href="../DataTable/index.html">Data Table</a></li>
+                        </ul>   
+                        <a class="Page5 dropdown-item" href="../DataTable/index.html">Data Table</a>  
+            </div>
+        </nav> <!-- navbar -->
+        
+        <!-- page content -->
+        <body>
+            <!-- Plot img and description --> 
+            <div class="row"> <!-- ROW_2 plot img and description-->
+                <div class="col-xs-12 col-xlg-8 text-center">
+                    <div class="overview">
+                        <!-- Plot img --> 
+                        <img src="./Fig2.png" 
+                        class="img-fluid float-left "
+                        alt=" City Latitude vs Humidity">
+                        <!-- Plot description --> 
+                        <h3> City Latitude vs Humidity </h3>
+                        <hr>
+                        <ul class="comparison">
+                            <li>Over all that latitude is not a reliable factor in determining the humity levels of a location. </li>
+                            <li>The majority of data seems to be located in the northern hemisphere.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div><!-- ROW_2 plot img and description-->
 
-<body>
+        </body> <!-- page content -->
 
-<nav>
-    <div class="sidenav">
-        <a class="Page0" href="../index.html">Home</a>
-        <a class="Page1" href="../Web-Design-Challenge/Viz1/index.html">Max Temp</a> 
-        <a class="Page2" href="#">Humidity</a> 
-        <a class="Page3" href="../Web-Design-Challenge/Viz3/index.html">Cloudiness</a> 
-        <a class="Page4" href="../Web-Design-Challenge/Viz4/index.html">Wind Speed</a>
-        <a class="Page5" href="../Web-Design-Challenge/Resources/index.html">Data Table</a> 
-    </div>
-</nav>
+    </div> <!-- page container minus header -->
 
-
-<div class="row"> <!-- ROW_2 -->
-    <div class="col text-center">
-    <div class="overview comparison">
-        <h3> Plot_Name </h3>
-    </div>
-    </div>
-</div> <!-- ROW_2 -->
-
-<div class="row"> <!-- ROW_3 -->
-    <div class="col text-center">
-        <p>
-            <a href="#"> 
-                <img src="https://images.forwardcdn.com/image/1300x/center/images/cropped/istock-517643357-1594145302.jpg" 
-                class="img-fluid"
-                alt="image">
-            </a> 
-        </p>
-    </div>
-</div> <!-- ROW_3 -->
-
-<div class="row"> <!-- ROW_4 -->
-    <div class="col text-center">
-        <div class="overview">
-            <p>Nisi quis consectetur excepteur cillum dolor minim. Reprehenderit do qui veniam dolor in ea cupidatat eiusmod ad adipisicing nulla officia dolor sit. Anim fugiat eu enim in ex est deserunt laborum commodo incididunt consectetur consectetur.
-            Ullamco nulla nulla cillum elit reprehenderit officia magna excepteur. Fugiat occaecat veniam eu amet veniam tempor fugiat magna exercitation amet veniam mollit pariatur. Minim adipisicing cupidatat est do est id ex reprehenderit quis enim
-            elit consectetur sint.
-            </p>
-        </div>
-    </div> 
-</div> <!-- ROW_4 -->
-
-</body>
-
-</div> <!-- container -->
-
-</main> 
-
+</main> <!-- whole page -->
 </html>
